@@ -1,0 +1,90 @@
+
+// ==========
+// CTA Copy |
+// ==========
+
+// Action - textContent
+$("div.stripe__buttons button span").text("Create your account");
+
+
+// ==============
+// Button Color |
+// ==============
+
+// Action - stylesheet
+$("body").each(function(){
+      var _s = document.createElement('style');
+      _s.innerHTML = "div.stripe__buttons > button {\n  background: #3347f7;\n  border: 1px solid #0B62A4;\n}\n\ndiv.stripe__buttons > button:hover {\n  background: #4c5df8;\n  border: 1px solid #0B62A4;\n}\n\n\ndiv.stripe__buttons > button > div {\n  color: #ddd !important;\n}";
+      _s.id = 'ascend-style';
+      document.head.appendChild(_s);
+    });
+
+
+// ===========
+// Logo Link |
+// ===========
+
+
+
+
+// ============
+// Expiration |
+// ============
+
+
+
+
+// ==================================
+// TrustPilot Widget and Refund Div |
+// ==================================
+
+// Action - Custom JS Action
+$(".trustpilot__wrapper > div").each(function(){ $("div.trustpilot-widget > iframe").css({
+  "max-height": "110px"
+});
+
+$("img[alt='money back guarantee']")
+	.parent()
+	.hide();
+
+$("div.registrations").append('<style media="screen"> @media only screen and (min-width: 941px){div.registrations__info{padding-top: 75px !important;}}</style>'); });
+
+
+// ===================
+// Credit Card Logos |
+// ===================
+
+
+
+
+// =================
+// Page Background |
+// =================
+
+// Action - backgroundColor
+$(".registrations").css("background-color", "#DDE2E4");
+
+
+// ========
+// Layout |
+// ========
+
+
+
+
+// ==========
+// CTA Size |
+// ==========
+
+// Action - Custom JS Action
+$("body").each(function(){ var $container = $("div.stripe__buttons").css({
+  "margin-bottom": "15px"
+});
+
+var $button = $("div.stripe__buttons button").css({
+  "min-height": "60px"
+});
+
+var $buttonText = $("div.stripe__buttons button span").css({
+  "font-size": "20px"
+}); });
